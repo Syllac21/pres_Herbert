@@ -10,14 +10,14 @@
     
     <header>
         <h1>Franck Herbert</h1>
-        <fieldset>
+        <figure>
             <img src="./images/protrait_Frank-Herbert.webp" alt="Portrait de Franck Herbert">
-            <legend>Frank Herbert</legend>
-        </fieldset>
+            <figcaption>Frank Herbert</figcaption>
+        </figure>
         <nav>
             <ul>
                 <li><a href="#biographie">Biographie</a></li>
-                <li><a href="#oeuvre">Oeuvre</a></li>
+                <li><a href="#oeuvres">Oeuvres</a></li>
                     <li><a href="#galerie">Galerie</a></li>
                     <li><a href="#citations">Citation</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -51,7 +51,7 @@
                                 <p>11/02/1986</p>
                             </div>
                         </div>
-                        <article id="oeuvre">
+                        <aside id="oeuvres">
                             <h2>Oeuvres</h2>
                             <p>Frank Herbert est surtout connu pour son oeuvre le cycle de Dune mais il a écrit d'autres romans :</p>
                             <ul>
@@ -60,15 +60,20 @@
                                 <li>L'effet Lazare</li>
                                 <li>L'étoile et le fouet</li>
                             </ul>
-                        </article>
+                        </aside>
                     </div>
-                    <div id="portrait">
-                        <img src="./images/protrait_Frank-Herbert.webp" alt="Portrait de Franck Herbert">
-                    </div>
-                </aside>
+                        <div id="portrait">
+                            <img src="./images/protrait_Frank-Herbert.webp" alt="Portrait de Franck Herbert">
+                        </div>
+                    </aside>
                 </article>
                 <article id="galerie">
                     <h2>Galerie</h2>
+                    <div class="galerie__modal hidden">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div id="caption"></div>
+                    </div>
                     <div class="gallery">
                         <img src="./images/Dune-tome-1.webp" alt="couverture de Dune">
                         <img src="./images/Le-Messie-de-Dune.webp" alt="couverture du Messie de Dune">
@@ -86,7 +91,7 @@
                         <blockquote>Souvent, je dois parler autrement que je pense, disait-il. On appelle cela: diplomatie. </blockquote>
     
                 </article>
-                <button id="show">Secret</button>
+                <button id="show">Dévoiler le secret</button>
                 <article id="secret" class="secret hidden">
                     <p>
                         frank Herbert n'aurait pas validé l'oeuvre de son fils
