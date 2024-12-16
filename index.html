@@ -3,22 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Franck Herbert</title>
 </head>
 <body>
-    <header>
-        <h1>Franck Herbert</h1>
-        <img src="./images/protrait_Frank-Herbert.webp" alt="Portrait de Franck Herbert">
-        <nav>
-            <ul>
-                <li><a href="#">Biographie</a></li>
-                <li><a href="#">Oeuvre</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Citation</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <h1>Franck Herbert</h1>
+            <fieldset>
+                <img id="image-titre" src="./images/protrait_Frank-Herbert.webp" alt="Portrait de Franck Herbert">
+                <legend>Frank Herbert</legend>
+            </fieldset>
+            <nav>
+                <ul>
+                    <li><a href="#biographie">Biographie</a></li>
+                    <li><a href="#oeuvre">Oeuvre</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#citations">Citation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <section>
+                <article id="biographie">
+                <h2>Biographie</h2>
+                <aside id="description">
+                    <div id="text_date">
+                        <p>Franck Herbert est un écrivain américain. Ses œuvres connurent un succès critique et commercial. Il doit principalement sa célébrité au roman Dune et à la série de cinq romans qui s'ensuivit. La saga de Dune aborde des thèmes tels que la survie de l'espèce humaine et son évolution, l'écologie, ou encore les interactions entre la religion, la politique et le pouvoir. Elle est considérée par beaucoup comme un classique dans le domaine de la science-fiction. 
+                        </p>
+                        <div id="dates" class="timeline">
+                            <div class="event">
+                                <h3>Date de naissance</h3>
+                                <p>08/10/1920</p>
+                            </div class="event">
+                            <div class="event">
+                                <h3>Publication de Dune</h3>
+                                <p>1963 et 1965</p>
+                            </div>
+                            <div class="event">
+                                <h3>Prix Nebula</h3>
+                                <p>1965</p>
+                            </div>
+                            <div class="event">
+                                <h3>Décès</h3>
+                                <p>11/02/1986</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="portrait">
+                        <img src="./images/protrait_Frank-Herbert.webp" alt="Portrait de Franck Herbert">
+                    </div>
+                </aside>
+                </article>
+                <article id="oeuvre">
+                    <h2>Oeuvres</h2>
+                    <p>Frank Herbert est surtout connu pour son oeuvre le cycle de Dune mais il a écrit d'autres romans :</p>
+                    <ul>
+                        <li>Destination vide</li>
+                        <li>L'incident de Jésus</li>
+                        <li>L'effet Lazare</li>
+                        <li>L'étoile et le fouet</li>
+                    </ul>
+                </article>
+                <article id="galerie">
+                    <h2>Galerie</h2>
+                    <div class="gallery">
+                        <img src="./images/Dune-tome-1.webp" alt="couverture de Dune">
+                        <img src="./images/Le-Messie-de-Dune.webp" alt="couverture du Messie de Dune">
+                        <img src="./images/Les-enfants-de-Dune.webp" alt="couverture des enfants de Dune">
+                        <img src="./images/et-l-homme-crea-dieu.jpg" alt="couverture de Et l'homme créa Dieu">
+                        <img src="./images/La-Mort-blanche.webp" alt="couverture de la mort blanche">
+                    </div>
+    
+                </article>
+                <article id="citations">
+                    <h2>Citations</h2>
+                    
+                        <blockquote>Je ne connais pas la peur, car la peur tue l'esprit. La peur est la petite mort qui conduit à l'oblitération totale. J'affronterai ma peur. Je lui permettrai de passer sur moi, au travers de moi. Et lorsqu'elle sera passée, je tournerai mon oeil intérieur sur son chemin. Et là où elle sera passée, il n'y aura plus rien. Rien que moi.</blockquote>
+                    
+                        <blockquote>Souvent, je dois parler autrement que je pense, disait-il. On appelle cela: diplomatie. </blockquote>
+    
+                </article>
+                <button id="show">Secret</button>
+                <article id="secret" class="hidden">
+                    <p>
+                        frank Herbert n'aurait pas validé l'oeuvre de son fils
+                    </p>
+                </article>
+                <article id="contact">
+                    <h2>Me contacter</h2>
+                    <form action="/" method="GET">
+                        <input type="text" name="Name" id="name" placeholder="Nom">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message">Votre message</textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <div><img src="./images/Logo.webp" alt="logo Dragon"></div>
+                <div>S.Lacroix</div>
+                <div>Mon site</div>
+            </address>
+        </footer>
+
+        <script src="./scripts.js"></script>
+    </body>
 
     
 </body>
