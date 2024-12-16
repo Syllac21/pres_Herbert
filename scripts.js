@@ -22,8 +22,9 @@ clickShow = buttonSecret.addEventListener('click', ()=>{
 images.forEach(image => {
     image.addEventListener('click', function() {
         modal.style.display = "flex";
-        modal.classList.remove('hidden'); // Afficher la modale
-        modalImg.src = this.src; // Mettre l'image dans la modale
+        modal.classList.remove('hidden');
+        modalImg.src = this.src;
+        modalImg.alt = this.alt; // Mettre l'image dans la modale
         // captionText.innerHTML = this.alt; // Ajouter la légende de l'image
     });
 });

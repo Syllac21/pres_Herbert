@@ -149,6 +149,11 @@ section {
 .hidden {
     visibility: hidden;
 }
+/* citations */
+
+#citations blockquote{
+    font-style: italic;
+}
 
 /* formulaire */
 form {
