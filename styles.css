@@ -163,7 +163,7 @@ section {
 
 /* formulaire */
 form {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -205,6 +205,7 @@ footer {
     height: 50px;
     align-items: center;
     justify-items: center;
+    padding: 5px;
 }
 
 footer img {
