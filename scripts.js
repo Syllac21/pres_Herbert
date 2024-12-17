@@ -12,9 +12,11 @@ const images = document.querySelectorAll('.gallery img');
 clickShow = buttonSecret.addEventListener('click', ()=>{
     if(showSecret){
         divSecret.classList.add('hidden');
+        buttonSecret.innerHTML = 'Dévoiler le secret';
         showSecret= false;
     }else{
         divSecret.classList.remove('hidden');
+        buttonSecret.innerHTML = 'Masquer le secret';
         showSecret = true;
     }
 })
