@@ -195,6 +195,22 @@ form button:hover {
     background-color: #0056b3;
 }
 
+.form__message{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error{
+    background-color: #f8d7da;
+    color: #721c24;
+}
 
 footer {
     display: grid;
